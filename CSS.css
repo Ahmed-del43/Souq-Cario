@@ -1,0 +1,336 @@
+:root {
+    --color: #42549C;
+}
+
+body {
+    font-family: 'Abril Fatface', serif;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+.Mane-nav svg {
+    margin-bottom: 11px;
+}
+
+svg {
+    width: 20px;
+}
+
+.Mane-nav {
+    background-color: var(--color);
+}
+
+nav input {
+    height: 48px;
+    padding: 20px 55px;
+    border: 1px solid #CDCFDC;
+}
+
+nav button {
+    border-radius: 8px;
+    background: var(--color);
+    border: 1px solid transparent;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.trans {
+    display: flex;
+}
+
+.trans svg {
+    width: 40px;
+}
+
+.after ::after {
+    margin-bottom: 10px;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 35px !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    background-color: var(--color) !important;
+}
+
+.Active {
+    color: var(--color);
+}
+
+.accordion-body ul li {
+    margin-bottom: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 16px !important;
+}
+
+.accordion-body ul li:first-child {
+    font-weight: 600;
+}
+
+.accordion-body li:not(:first-child):hover {
+    padding-left: 6px;
+    text-decoration: underline;
+}
+
+.name-ul ul li:hover {
+    padding-left: 6px;
+    text-decoration: underline;
+}
+
+.name-ul ul li {
+    font-weight: 400 !important;
+}
+
+.Box,
+.Box-2,
+.Box-3 {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Box::before {
+    content: attr(data-on);
+    position: absolute;
+    color: white;
+    direction: rtl;
+    bottom: 50px;
+    left: 5%;
+    padding: 10px;
+}
+
+.Box-2::before {
+    content: attr(data-ser);
+    position: absolute;
+    color: black;
+    direction: rtl;
+    top: 12%;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.Box-3::before {
+    content: attr(data-work);
+    position: absolute;
+    color: white;
+    direction: rtl;
+    bottom: 10%;
+    padding: 10px;
+}
+
+.text-img {
+    text-align: center;
+    height: 29px;
+    margin: auto;
+    border-radius: 0px 0px 12px 12px;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.Washing-Machine input {
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background: #42549C;
+    margin-top: 10%;
+    border: 1px solid transparent;
+}
+
+.Washing-Machine img {
+    width: 240px;
+    height: 100%;
+    margin-left: 26px;
+}
+
+.Washing-Machine p {
+    font-size: 22px;
+    text-transform: capitalize;
+    transform: translateY(18px);
+}
+
+@media (max-width: 576px) {
+    .Washing-Machine img {
+        width: 40%;
+    }
+
+    .Washing-Machine p {
+        font-size: 16px;
+    }
+}
+
+.All-sales img {
+    width: 100px;
+}
+
+.All-sales {
+    border-radius: 12px;
+    border: 1px solid #CDCFDC;
+    background: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.Sales .col-3 {
+    width: 24% !important;
+}
+
+.Sales button {
+    height: 38px;
+    border: 1px solid #CDCFDC;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .Sales {
+        overflow-x: auto !important;
+    }
+
+    .Sales .col-3 {
+        width: 44% !important;
+    }
+
+    .Best-Selling .row {
+        flex-wrap: nowrap !important;
+        gap: 33px !important;
+    }
+}
+
+.p-At-Bestselling,
+.Text-New {
+    font-size: 13px;
+    text-align: left;
+    background: #FF5200;
+    padding: 5px;
+    border-radius: 0 12px 12px 0;
+    transform: translateX(-12px);
+    width: 55px;
+    height: 30px;
+}
+
+.Text-New {
+    background: #34D03B;
+}
+
+.offcanvas-header {
+    background-color: var(--color);
+
+}
+
+.offcanvas-header button svg {
+    width: 30px;
+    height: 20px;
+    stroke: white;
+}
+
+@media (max-width: 767px) {
+    .Options {
+        overflow: hidden !important;
+    }
+
+    .Options-1 svg {
+        width: 30px;
+    }
+
+    .Options-1 p {
+        font-size: 14px;
+    }
+
+    .Options .col-4 {
+        width: 44% !important;
+    }
+
+    .Options-1 .row {
+        flex-wrap: nowrap !important;
+        gap: 33px !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+.Quick-Order:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 84%;
+    background: #ECEDF2;
+    transform: translateX(-20px);
+}
+
+.Options {
+    border-bottom: 1px solid #ECEDF2;
+}
+
+.have:hover {
+    background-color: var(--color) !important;
+}
+
+.footer {
+    background-color: #303A63;
+    min-height: 480px;
+}
+
+.footer svg {
+    width: 55px;
+}
+
+.footer p,
+.footer a {
+    color: #ECEDF2;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.Input-at-There-Footer input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    border-radius: 8px;
+    caret-color: #fff;
+    color: #fff;
+    outline: none;
+}
+
+.Input-at-There-Footer svg {
+    right: 15px;
+    bottom: 13px;
+    width: 18px;
+}
+
+.dropdown-toggle {
+    background-color: transparent !important;
+    color: #000;
+}
+
+.dropdown-toggle::after {
+    margin-left: 13rem !important;
+}
